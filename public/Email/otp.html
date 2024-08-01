@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #007bff;
+            color: #ffffff;
+            border-radius: 10px 10px 0 0;
+        }
+        .header img {
+            width: 50px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .otp {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #007bff;
+            color: #ffffff;
+            border-radius: 0 0 10px 10px;
+            margin-top: 20px;
+        }
+        .footer p {
+            margin: 0;
+        }
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://yourcompanylogo.com/logo.png" alt="Company Logo">
+            <h1>Your OTP Code</h1>
+        </div>
+        <div class="content">
+            <p>Hello,</p>
+            <p>Thank you for using our service. To complete your verification, please use the following One-Time Password (OTP):</p>
+            <div class="otp">{{.OTP}}</div>
+            <p>This OTP is valid for the next 10 minutes. Please do not share this code with anyone.</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+            <p><a href="https://yourcompanywebsite.com">Visit our website</a></p>
+        </div>
+    </div>
+</body>
+</html>
